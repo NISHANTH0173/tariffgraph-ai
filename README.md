@@ -1,16 +1,104 @@
-# React + Vite
+# TariffGraph AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## AI-Powered Trade Impact Intelligence
 
-Currently, two official plugins are available:
+TariffGraph AI is an AI-powered trade intelligence and visualization platform that turns natural-language tariff questions into an explainable interactive Trade Impact Graph.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
 
-## React Compiler
+**Demo URL:**  
+https://beta-pos-causes-stripes.trycloudflare.com
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+> Note: This is a temporary Cloudflare Quick Tunnel used for the hackathon demo.
 
-## Expanding the ESLint configuration
+## 🎯 Problem
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Tariff changes can create connected effects across imports, manufacturers, products, industries, and downstream businesses.
+
+Traditional tools often show isolated tariff numbers or trade information, making it difficult to understand:
+
+**What changed → what is connected → what could be affected → why**
+
+## 💡 Solution
+
+TariffGraph AI allows users to ask questions such as:
+
+> What if the tariff on steel increases from 10% to 25% in 2026?
+
+The system analyzes the question and creates an interactive graph connecting:
+
+**Country → Product → Tariff Change → Import Cost → Manufacturer → Downstream Industry**
+
+The platform uses cautious scenario language such as **could**, **may**, and **potential impact** instead of presenting uncertain outcomes as guaranteed predictions.
+
+## ✨ Key Features
+
+- Natural-language tariff questions
+- AI entity and intent extraction
+- Interactive Trade Impact Graph
+- Country, product, tariff, and industry relationships
+- Clickable and draggable graph nodes
+- Node details and relationship information
+- Reasoning path
+- FACT / INFERENCE / POSSIBILITY distinction
+- Evidence and source area
+- Trade Data view
+- Timeline
+- Scenario history
+- What-If Simulator
+- Scenario comparison
+- Professional trade-intelligence dashboard
+
+## 🧠 IBM Technology
+
+### IBM Granite
+
+IBM Granite 4.2 is used for AI analysis and structured interpretation.
+
+For this prototype, IBM Granite runs locally through **Ollama**.
+
+### IBM Bob 2.0
+
+IBM Bob 2.0 was used as a core development tool throughout the project for:
+
+- Understanding the repository
+- Planning and implementing features
+- Code modification and maintenance
+- Testing
+- Debugging
+- Production build verification
+
+Bob task-session evidence is preserved in:
+
+`bob_sessions/`
+
+## 🛠️ Technology Stack
+
+- React
+- Vite
+- JavaScript
+- Tailwind CSS
+- React Flow
+- Node.js
+- Ollama
+- IBM Granite 4.2
+- GitHub
+
+## 🏗️ Architecture
+
+```text
+User
+  ↓
+Natural Language Query
+  ↓
+AI Query Parser
+  ↓
+Entity + Intent Extraction
+  ↓
+Trade Data Layer
+  ↓
+Knowledge Graph
+  ↓
+Impact Analysis
+  ↓
+Interactive Graph + AI Explanation
