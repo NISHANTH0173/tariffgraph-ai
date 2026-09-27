@@ -1,0 +1,17 @@
+/* TariffGraph AI
+   Global app-level styles are handled primarily
+   through Tailwind CSS utility classes in App.jsx.
+*/
+
+#root {
+  min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
